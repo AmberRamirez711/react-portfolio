@@ -7,4 +7,21 @@
     input {
         margin-bottom: 0px;
     }
+
+    .image-uploaders {
+        @include base-grid();
+        grid-template-columns: 200px;
+
+        .portfolio-manager-image-wrapper {
+            .image-removal-link { a {
+                 font-weight: 900;
+                    color: red;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $warning;
+                }   }
+            }
+        }
+    }
 }
